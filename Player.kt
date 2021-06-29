@@ -3,7 +3,7 @@ import java.io.File
  */
 class Player(_name: String, var healthPoints: Int = 100, val isBlessed: Boolean, private val isImmortal: Boolean){
         var name = _name
-        get() = "${field.capitalize()} of $hometown"
+        get() = "${field.capitalize()} of $hometown    "
         private set(value) {
             field = value.trim()
         }
