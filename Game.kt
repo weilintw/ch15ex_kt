@@ -4,6 +4,11 @@ fun main() {
 //呼叫 Player 類別的主建構函數，產生一個類別實體
     var player = Player("wl")
     player.castFireBall(5)
+
+    var currentRoom = TownSquare() //Room("Foyer")
+    println(currentRoom.description())
+    println(currentRoom.load())
+
     player.auraColor()
     printPlayerStatus(player)
 }
