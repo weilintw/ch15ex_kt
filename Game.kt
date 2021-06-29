@@ -1,4 +1,4 @@
-/*c15-10
+/*c15-16*/
 fun main() {
 //呼叫 Player 類別的主建構函數，產生一個類別實體
 //    var player = Player("wl")
