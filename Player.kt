@@ -1,5 +1,5 @@
 import java.io.File
-/*c13-12
+/*c15-20
  */
 class Player(_name: String, var healthPoints: Int = 100, val isBlessed: Boolean, private val isImmortal: Boolean){
         var name = _name

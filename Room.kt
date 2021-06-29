@@ -1,4 +1,4 @@
-/*c14-10
+/*c14-20
 */
 open class Room (val name:String){
     protected open val dangerLevel = 5
@@ -6,10 +6,10 @@ open class Room (val name:String){
 
     open fun load() = "這裡沒什麼可看的..."
 }
-class TownSquare : Room("Town Square"){
+open class TownSquare : Room("Town Square"){
     override val dangerLevel = super.dangerLevel -3
     private  var bellSound ="GWONG"
-    override fun load() = "The villagers rally and cheer as you enter！"
+    final override fun load() = "The villagers rally and cheer as you enter！"
     private  fun  ringBell() = "The bell tower announces your arrival. $bellSound"
 
 }
